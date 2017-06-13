@@ -1,0 +1,91 @@
+
+@import "./reset.less";
+@import "../../node_modules/antd/dist/antd.css";
+body{background-image:url('http://www.kunyujie.com/web/css/assets/absolute/bg2.jpg');background-size:cover;}
+.wrap{position:relative;width:100%;height:100%;height:100vh;
+
+	.wrapBox{position:absolute;left:50%;top:50%;z-index:2;width:1000px;margin-left:-500px;margin-top:-300px;
+
+		.mines{text-align:center;background:#049ec4;min-height:600px;
+			.headers{width:200px;height:200px;margin:0 auto;padding-top:10px;
+				& img{width:100%;border-radius:60%;transition:all 1s ease-in-out;}
+				& img:hover{transform:rotateY(180deg);}
+			}
+			& .author{overflow:hidden;margin:20px 20px 0;padding-bottom:20px;color:#fff;font-size:14px;border-bottom:1px solid #808080;
+				& span{font-size:20px;}
+				& h2{margin:20px 0;}
+				& em{font-style:normal;}
+			}
+			& .contact{overflow:hidden;margin:0 20px;padding:50px 0 0 40px;border-top:1px solid #fff;
+				& li{height:30px;line-height:30px;text-align:left;font-size:14px;color:#fff;transition:all 1s ease-in-out;
+					a{color:#fff;}
+				}
+				& li:hover{transform:scale(1.2);cursor:pointer;					
+					a{color:#333;}
+				}
+			}
+		}
+
+
+		.container{background:#049EC4;height:600px;padding:0 16px;
+			.content{padding:10px 20px;width:760px;}
+			.crumbs{height:46px;line-height:46px;padding-left:20px;font-size:18px;color:#fff;}
+			.contentText{padding:10px;font-size:14px;color:#fff;
+				& h5{display:flex;flex-direction:row;align-items:center;height:24px;font-size:16px;}
+				& h5 i{height:22px;margin-right:10px;border-left:1px solid #fff;border-right:1px solid #999;}
+				& p{padding-left:12px;line-height:24px;cursor:pointer;transition:all 1s ease-in-out;}
+				& p:hover{transform:translateX(-12px);}
+			}
+			.articleList{padding:10px 20px;min-height:440px;
+				& li{height:40px;padding:0 10px;line-height:40px;border-bottom:1px solid #808080;border-top:1px solid #fff;
+					& i{float:left;font-size:24px;color:#fff;margin:8px 10px 0 0;}
+					& a, & span{display:inline-block;}
+					& a{float:left;width:300px;font-size:16px;transition:all 1s ease-in-out;}
+					& a:hover{transform:translate(10px);}
+					& span{float:right;font-size:14px;color:#fff;}
+				}
+				& li:nth-child(odd) a{color:#000;}
+				& li:nth-child(even) a{color:#fff;}
+			}
+			.articleText{padding:10px 20px;overflow-y:auto;height:500px;font-size:14px;color:#fff;
+				& h2{text-align:center;margin-bottom:20px;}
+				& .athd{text-align:center;margin-bottom:10px;
+					span{margin-right:20px;color:#333;}
+				}
+				& .atcontent{min-height:360px;}
+				& .atft{margin:10px 0;color:#333;}
+				& p{text-indent:2em;line-height:24px;}
+			}	
+			.atopt{margin-top:12px;
+					& span{display:flex;flex:1;cursor:pointer;}
+					& span:hover{text-decoration:underline;}
+					& span:first-child{padding-right:10px;}
+					& span:last-child{padding-left:10px;justify-content:flex-end;}		
+			}
+		}
+
+		.nav a{font-size:14px;}
+		.about{padding-left:20px;color:#fff;font-size:14px;}
+		
+	
+	}
+
+}
+
+
+
+@keyframes rotete{
+    0%{transform:rotate(180deg);}
+    100%{transform:translate(360deg);}
+}
+
+@keyframes music{
+    0%{transform:scale(0.9);background:#049EC4;}
+    50%{transform:scale(1);background:#E05158;}
+    100%{transform:scale(0.9);background:#fff;}
+}
+@keyframes color{
+    0%{color:#fff;}
+    50%{color:#049EC4;}
+    100%{color:#E05158;}
+}

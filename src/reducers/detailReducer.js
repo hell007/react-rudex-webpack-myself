@@ -8,13 +8,15 @@ let detailReducer = (state = initialState, action) => {
     switch (action.type) {
 
         case types.kArticleView:
-            return state;
+            return {
+                ...state
+            }
 
         case types.kArticleViewReceived:
             return action.data;
             
         default:
-            return state;
+            return {...state};
     }
 };
 

@@ -15,11 +15,15 @@ const initialState = {
 let articleReducer = (state = initialState, action) => {
     switch (action.type) {
         case types.kArticleList:
-            return state;
+            //return state;
+            return {
+                ...state   //三个点是展开符
+            }
 
         case types.kArticleListReceived:
              
             return {
+            	...state,
                 stories: action.data.list,
                 isLoading: true,
                 pagination: {
@@ -30,7 +34,8 @@ let articleReducer = (state = initialState, action) => {
             }
             
         default:
-            return state;
+            //return state;
+            return {...state};
     }
 };
 

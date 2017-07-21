@@ -7,8 +7,8 @@ import detailReducer from './detailReducer'
 
 
 export default combineReducers({
+	routing: routerReducer,
 	articleReducer,
-	detailReducer,
-	routing: routerReducer
+	detailReducer
 })
 

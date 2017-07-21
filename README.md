@@ -1,4 +1,4 @@
-# react-todo
+# react-rudex-webpack-myself
 
 ### 开发
 

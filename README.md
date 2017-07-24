@@ -35,7 +35,7 @@ import { Route,Link,Switch, HashRouter as Router } from 'react-router-dom' // �
 
 /*
  * 注意点：
- * 路由没有<Switch>切换不了
+ * 路由互斥使用<Switch>
  */
 export default class App extends Component {
     

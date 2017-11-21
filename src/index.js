@@ -6,9 +6,6 @@ import {Provider} from 'react-redux' //利用Provider可以使我们的 store �
 //使用 hashHistory，浏览器上看到的 url 会是这样的: /#/a/a1?_k=adseis
 //使用 browserHistory,需要服务端的支持，浏览器上看到的 url 会是这样的：/a/a1 
 
-//react-router-dom 的使用：http://www.cnblogs.com/dudeyouth/p/6617059.html
-import { Route, HashRouter as Router } from 'react-router-dom'
-
 import createHistory from 'history/createBrowserHistory'
 const browserHistory = createHistory();
 

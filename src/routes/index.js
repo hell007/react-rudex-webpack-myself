@@ -1,5 +1,8 @@
 import React,{Component} from 'react' // 引入react
-import { Route,Link,Switch, HashRouter as Router } from 'react-router-dom' // 引入react路由
+
+//react-router-dom 的使用：http://www.cnblogs.com/dudeyouth/p/6617059.html
+//import { Router } from 'react-router-dom'
+import { Route, Link, Switch, Router } from 'react-router-dom' // 引入react路由
 
 import createHistory from 'history/createHashHistory'
 const history = createHistory()

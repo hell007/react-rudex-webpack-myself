@@ -1,3 +1,4 @@
+//ES6 实践规范 https://juejin.im/post/5934ff6d2f301e005861422f
 //参考地址 http://xjf975999.iteye.com/blog/2284745
 
 module.exports = {

@@ -2,11 +2,11 @@
 
 ### 开发
 
-	npm run start
+	npm run dev
 
 ### 构建
 	
-	npm run build
+	npm run build:prod
 
 ### 注意 
 

@@ -30,8 +30,7 @@ module.exports = {
 		assetsPublicPath: '/',
 		proxyTable: {
 			'/apis': {
-				target: 'http://www.kunyujie.com',
-				//target: 'http://localhost:8000/myself/',
+				target: 'http://localhost:8000/myself/',
 				changeOrigin: true,
 				pathRewrite: {
 					'^/apis': '/'

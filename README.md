@@ -73,12 +73,16 @@ export default class App extends Component {
 
 #### 支持
 .babelrc 
+
 .eslintrc.js
+
 .postcssrc.js
+
 .eslintignore
+
 .editorconfig
-VUE-CLI
-此脚手架支持 react vue
+
+此脚手架由VUE-CLI修改，因此支持 react vue
 
 
 

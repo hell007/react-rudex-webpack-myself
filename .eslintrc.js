@@ -5,16 +5,26 @@ module.exports = {
     root: true,
     parser: 'babel-eslint',
     parserOptions: {
-        sourceType: 'module'
+        'ecmaVersion': 6,
+        'sourceType': 'module',
+        'ecmaFeatures': {
+            'jsx': true
+        }
     },
     env: {
-        browser: true,
-        node: true,
-        es6: true,
+        'es6': true,
+        'browser': true,
+        'node': true,
+        'mocha': true
     },
-    extends: 'eslint:recommended',
+    extends: [
+        'eslint:recommended',
+        'plugin:import/errors',
+        'plugin:import/warnings'
+    ],
     // required to lint *.vue files
     plugins: [
+        'react',
         'html'
     ],
     // check if imports actually resolve

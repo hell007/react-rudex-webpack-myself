@@ -71,9 +71,14 @@ export default class App extends Component {
 #### webpack 只能有一个 export
 
 
-### 支持  
+#### 支持
 .babelrc 
-.eslintrc
+.eslintrc.js
+.postcssrc.js
+.eslintignore
+.editorconfig
+VUE-CLI
+此脚手架支持 react vue
 
 
 

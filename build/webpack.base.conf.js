@@ -19,6 +19,7 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx', '.vue', '.less', '.scss', '.css', '.json'],
         alias: {
+            //'vue$': 'vue/dist/vue.esm.js',
             '@': resolve('src'),
             'src': path.resolve(__dirname, '../src'),
             'assets': path.resolve(__dirname, '../src/assets'),
@@ -37,11 +38,6 @@ module.exports = {
     },
     module: {
         rules: [
-             /*test: /\.(less|css)$/,
-                use: ExtractTextPlugin.extract({
-                    use: ["css-loader", "less-loader", "postcss-loader"]
-                })
-            }, */
             /*{
                 test: /\.(less|css)$/,
                 loader: 'css-loader',
